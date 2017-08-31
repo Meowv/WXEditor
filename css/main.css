@@ -1,0 +1,113 @@
+.top{ margin:0 auto; width:100%; height:100px; background:#282d36;}
+
+.main{ margin:0 auto; width:1000px;  height:690px; margin-top:10px;}
+
+.main_L{ width:404px; height:690px; float:left; background: RGBA(0,0,0,0.3);}
+.main_L .L1{ width:88px; float:left; height:690px; background:#292f39;}
+.main_L .L1 ul{ width:100%; }
+.main_L .L1 ul li{ width:100%; height:88px; line-height:88px;}
+.main_L .L1 ul .one{ background: #424a58;}
+.main_L .L1 ul li:hover{ background: #424a58;}
+.main_L .L2{ width:280px; height:auto; float:left;overflow-y:scroll; height:690px;}
+.main_L .L2 .top{ width:100%; height:160px; background: #424a58; float:left;}
+.main_L .L2 .bottom{ width:100%; height:100%; float:left;}
+.main_R{ width: 596px; height:690px; float:left; background: #FBFBFB;}
+
+
+
+
+.ad{ margin:0 auto; width:1000px; height:100px;}
+
+
+
+
+
+
+
+
+
+
+<!--左侧叠加效果 S-->
+.bellows {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bellows__header {
+	position: relative;
+	padding: 15px 20px;
+	border: 1px solid #292f39;
+	border-width: 0 0 1px;
+	background: #424a58;
+	color: white;
+	-webkit-tap-highlight-color: transparent;
+}
+.bellows__header:active {
+	background: #424a58;
+}
+ .bellows__header::before, .bellows__header::after {
+ content: '';
+ position: absolute;
+ top: 50%;
+ right: 20px;
+ z-index: 2;
+ display: block;
+ width: 16px;
+ height: 4px;
+ margin-top: -2px;
+ background: white;
+ pointer-events: none;
+ -webkit-transition: -webkit-transform 0.25s ease-in-out;
+ transition: transform 0.25s ease-in-out;
+}
+ .bellows__header::before {
+ content: '';
+ -webkit-transform: rotate(0deg);
+ -ms-transform: rotate(0deg);
+ transform: rotate(0deg);
+}
+ .bellows__header::after {
+ -webkit-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ transform: rotate(90deg);
+}
+ .bellows__item.bellows--is-open > .bellows__header::before, .bellows__item.bellows--is-opening > .bellows__header::before {
+ -webkit-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ transform: rotate(180deg);
+}
+ .bellows__item.bellows--is-open > .bellows__header::after, .bellows__item.bellows--is-opening > .bellows__header::after {
+ -webkit-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+.bellows__item:last-child > .bellows__header {
+	border-bottom: 0;
+}
+.bellows__header h1,  .bellows__header h2,  .bellows__header h3,  .bellows__header h4 {
+	margin: 0; font-size:18px;
+}
+.bellows__content {
+	padding: 20px 10px;
+/*border: 1px solid #ecf0f1; */}
+.bellows__content .bellows {
+	margin-top: 20px;
+}
+<!--左侧叠加效果 E-->
+
+
+
+<!--配色效果 S-->
+
+
+<!--配色效果 E-->
+
+
+
+
+ 
+
+
+
+
+

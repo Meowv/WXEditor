@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../internal.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="../../third-party/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="background.css">
+<style>
+.bgarea {
+    height: 90%;border: 0 none;margin:5px 10px;
+}
+</style>
+</head>
+<body>
+    <div id="bg_container" class="wrapper">
+        <div id="tabHeads" class="tabhead">
+            <span class="focus" data-content-id="normal"><var id="lang_background_normal"></var></span>
+            <span class="" data-content-id="imgManager"><var id="lang_background_local"></var></span>
+        </div>
+        <div id="tabBodys" class="tabbody">
+            <div id="normal" class="panel focus">
+                <fieldset class="bgarea">
+                    <div class="content">
+                        <div class="pl">
+                            <label><input id="nocolorRadio" class="iptradio" type="radio" name="t" value="none" checked="checked">无背景 </label>
+                            <label><input id="coloredRadio" class="iptradio" type="radio" name="t" value="color">有背景 </label>
+                        </div>
+                        <div class="wrapcolor pl">
+                            <div class="color">
+                                <var id="lang_background_color"></var>:
+                            </div>
+                            <div id="colorPicker"></div>
+                            
+                             &nbsp;&nbsp;&nbsp;&nbsp; <label>内部边距 : </label><input class="txt" value="10px" style="width:80px;" type="text" id="padding"> 
+                            <div class="clear"></div>
+                        </div>
+                        
+                        <div class="wrapcolor pl">
+                            <label style="color:red;">背景图片 : </label><input class="txt" type="text" id="url">
+                        </div>
+                        <div id="alignment" class="alignment">
+                        	<p style="margin-bottom: 5px;">
+                            	背景图尺寸 : <select id="sizeType">
+                            	<option value="auto auto">自动</option>
+                            	<option value="cover">等比缩放覆盖(可能部分超出范围)</option>                            	
+                            	<option value="contain">拉伸缩放自适应（可能出现重复）</option>                               
+                            	</select>
+                            </p>
+                            <var id="lang_background_align"></var> : <select id="alignType">
+                                <option value="center center">居中</option>
+                                <option value="left top">左上</option>
+                                <option value="right top">右上</option>
+                                <option value="self">自定义</option>
+                            </select>
+                            	&nbsp;&nbsp;&nbsp;&nbsp;重复方式 : <select id="repeatBgType">
+                            	<option value="no-repeat">不重复</option>
+                                <option value="repeat-x">水平重复</option>
+                                <option value="repeat-y">竖直重复</option>
+                                <option value="repeat">平铺</option>
+                            </select>
+                        </div>
+                        
+                        <div id="custom" >
+                            <var id="lang_background_position"></var> : x:<input type="text" size="1" id="x" maxlength="4" value="0">px&nbsp;&nbsp;y:<input type="text" size="1" id="y" maxlength="4" value="0">px
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+            <div id="imgManager" class="panel">
+                <div id="imageList" style=""></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="background.js"></script>
+</body>
+</html>
